@@ -1,13 +1,16 @@
 import { useState } from 'react'
-import Todo from './components/Todo'
 import './App.css'
+import Todo from './components/Todo'
+import Avatar from './components/Avatar'
 
 function App() {
 
   return (
     <div>
-      <h1>Todo List</h1>
+      <h2>Todo List</h2>
       <Todo />
+      <h2>Avatar</h2>
+      <Avatar />
     </div>
   )
 }
