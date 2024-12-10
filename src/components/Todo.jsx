@@ -18,7 +18,10 @@ function Todo() {
           alt="Hedy Lamarr"
           className="photo"
         />
-        <ul>
+        <ul style={{
+          backgroundColor: 'black',
+          color: 'pink'
+        }}>
           <li>Invent new traffic lights</li>
           <li>Rehearse a movie scene</li>
           <li>Improve the spectrum technology</li>
