@@ -5,11 +5,14 @@ import Avatar from './components/Avatar'
 import PackingList from './components/PackingList'
 import PeopleList from './components/List'
 import Toolbar from './components/Toolbar'
+import Gallery from './components/Gallery'
 
 function App() {
 
   return (
     <div>
+      <h2>Gallery</h2>
+      <Gallery />
       <h2>Toolbar</h2>
       <Toolbar 
         onPlayMovie={() => alert('Playing!')}
