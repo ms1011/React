@@ -22,7 +22,7 @@ const people = [{
 
 export default function List() {
     const listItems = people.map(person =>
-        <li>{person.id} {person.name} {person.profession}</li>
+        <li key={person.id}>{person.name} {person.profession}</li>
     );
 
     return <ul>{listItems}</ul>
