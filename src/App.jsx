@@ -6,11 +6,14 @@ import PackingList from './components/PackingList'
 import PeopleList from './components/List'
 import Toolbar from './components/Toolbar'
 import Gallery from './components/Gallery'
+import Form from './components/Form'
 
 function App() {
 
   return (
     <div>
+      <h2>Form</h2>
+      <Form />
       <h2>Gallery</h2>
       <Gallery />
       <Gallery />
