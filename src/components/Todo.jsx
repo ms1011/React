@@ -1,9 +1,18 @@
 import React from "react";
 
 function Todo() {
+  const today = new Date();
+
+  function formatDate(date) {
+    return new Intl.DateTimeFormat(
+      'ko-KR',
+      { weekday: 'long' }
+    ).format(date);
+  }
+
     return (
       <>
-        <h1>Hedy Lamarr's Todos</h1>
+        <h1>To Do List for {formatDate(today)}</h1>
         <img
           src="https://i.imgur.com/yXOvdOSs.jpg"
           alt="Hedy Lamarr"
