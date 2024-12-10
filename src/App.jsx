@@ -13,6 +13,7 @@ function App() {
     <div>
       <h2>Gallery</h2>
       <Gallery />
+      <Gallery />
       <h2>Toolbar</h2>
       <Toolbar 
         onPlayMovie={() => alert('Playing!')}
