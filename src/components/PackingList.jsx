@@ -4,10 +4,25 @@ function Item({ name, isPacked }) {
     //     return <li className="item">{name} ✅</li>;
     // }
     // return <li className="item">{name}</li>;
+    // return (
+    //     <li className="item">
+    //         {/* {isPacked ? name + ' ✅' : name} 삼항 연산자 이용 */}
+    //         {name} {isPacked && '✅'}
+    //     </li>
+    // );
+
+    let itemContent = name;
+    if (isPacked) {
+        itemContent = (
+            <del>
+                {name + " ✅"}
+            </del>
+        );
+    }
+
     return (
         <li className="item">
-            {/* {isPacked ? name + ' ✅' : name} 삼항 연산자 이용 */}
-            {name} {isPacked && '✅'}
+            {itemContent}
         </li>
     );
 }
