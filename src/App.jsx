@@ -7,11 +7,14 @@ import PeopleList from './components/List'
 import Toolbar from './components/Toolbar'
 import Gallery from './components/Gallery'
 import Form from './components/Form'
+import Counter from './components/Counter'
 
 function App() {
 
   return (
     <div>
+      <h2>Counter</h2>
+      <Counter />
       <h2>Form</h2>
       <Form />
       <h2>Gallery</h2>
