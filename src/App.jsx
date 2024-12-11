@@ -11,6 +11,7 @@ import Form from './components/Form'
 import Counter from './components/Counter'
 import MovingDot from './components/MovingDot'
 import Form2 from './components/Form2'
+import FormImmer from './components/FormImmer'
 
 function Home() {
     return (
@@ -47,6 +48,10 @@ function Form2Page() {
   return <Form2 />
 }
 
+function FormImmerPage() {
+  return <FormImmer />
+}
+
 function App() {
 
   return (
@@ -55,6 +60,7 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/dot' element={<DotPage />} />
         <Route path='/form2' element={<Form2Page />} />
+        <Route path='/formimmer' element={<FormImmerPage />} />
       </Routes>
     </BrowserRouter>
   )
