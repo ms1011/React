@@ -10,6 +10,7 @@ import Gallery from './components/Gallery'
 import Form from './components/Form'
 import Counter from './components/Counter'
 import MovingDot from './components/MovingDot'
+import Form2 from './components/Form2'
 
 function Home() {
     return (
@@ -42,6 +43,10 @@ function DotPage() {
   return <MovingDot />;
 }
 
+function Form2Page() {
+  return <Form2 />
+}
+
 function App() {
 
   return (
@@ -49,6 +54,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/dot' element={<DotPage />} />
+        <Route path='/form2' element={<Form2Page />} />
       </Routes>
     </BrowserRouter>
   )
