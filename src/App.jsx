@@ -13,6 +13,7 @@ import MovingDot from './components/MovingDot'
 import Form2 from './components/Form2'
 import FormImmer from './components/FormImmer'
 import ListChange from './components/ListChange'
+import Arcodion from './components/Arcodion'
 
 function Home() {
     return (
@@ -57,6 +58,10 @@ function ListChangePage() {
   return <ListChange />
 }
 
+function ArcodionPage() {
+  return <Arcodion />
+}
+
 function App() {
 
   return (
@@ -67,6 +72,7 @@ function App() {
         <Route path='/form2' element={<Form2Page />} />
         <Route path='/formimmer' element={<FormImmerPage />} />
         <Route path='/listchange' element={<ListChangePage />} />
+        <Route path='/arcodion' element={<ArcodionPage />} />
       </Routes>
     </BrowserRouter>
   )
